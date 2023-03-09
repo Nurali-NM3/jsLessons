@@ -77,11 +77,9 @@
 //
 // console.log(c)
 
-// let a = 'children'
-// let b = a.toUpperCase()
-// let c = b.slice(b.indexOf('n')).toLowerCase()
-// let g = b.replace('N',c)
-// console.log(g)
+// let a = 'helloooo'
+// let f = a.slice(0,-1).toUpperCase() + a.slice(-1).toLowerCase()
+// console.log(f)
 
 // let a = 'boss'
 // let b = a.replace('oss','sso')
@@ -126,13 +124,141 @@
 // let g = b.replace('0',h)
 // console.log(g);
 
-let a = 'monkey'
-let b = 'banana'
-let g = a.slice(0,1)
-let h = a.slice(3,4)
-let p = b.slice(2,3)
-let f = b.replace('b',g)
-let d = f.replaceAll('n',h)
-let c = d.replace('k',p)
-let j = c.replace('ka',h)
-console.log(j);
+// let a = 'monkey'
+// let b = 'banana'
+// let g = a.slice(0,1)
+// let h = a.slice(3,4)
+// let p = b.slice(2,3)
+// let f = b.replace('b',g)
+// let d = f.replaceAll('n',h)
+// let c = d.replace('k',p)
+// let j = c.replace('ka',h)
+// console.log(j);
+
+// 03/09
+
+// function userOfBarthday (user,day,person){
+//     if ( day > 32 ){
+//         return `${day} error is wrong day are ${person}  foolish dude`
+//
+//     }else if(day % 2 ===0, person === 'female'){
+//         return ` welcome, ${user} !how are you ? ${day} great day the attrective ${person}`
+//     }else if(day % 2 ===0, person === 'male'){
+//         return ` welcome, ${user} !how are you ? ${day} great day the attrective ${person}`
+//     } else {
+//         return `welcome, ${user} !how are you ? ${day} simple day the attrective ${person} `
+//     }
+// }
+//
+// console.log(userOfBarthday('Ivan',10, 'male') )
+
+// function nameOfUser (user){
+//     if (user === 'nur'){
+//         return `user admin true welcome ${user}`
+//     }else {
+//         return 'folse not correct user'
+//     }
+// }
+// console.log(nameOfUser('nur'))
+
+// function dayOfFebruary(day,month){
+//     if(day <= 28  ){
+//         if (month === 'february'){
+//             return `today is ${day} february`
+//         }else {
+//             `on february only 28 day , your day is ${day} of another month `
+//         }
+//         return `today is ${day} february`
+//     }else {
+//         return `on february only 28 day , your day is ${day} of another month `
+//     }
+// }
+// console.log(dayOfFebruary(28,'february'))
+
+// function num (num){
+//     if (num === 50){
+//         return `${num} is correct`
+//     }else {
+//         return `${num} is not correct`
+//     }
+// }
+// console.log(num(50))
+
+// function userAndAge (user,age){
+//     if(age >= 18){
+//         return ` ${user} ${age} welcome`
+//     }else {
+//         return `${user} ${age} rejected`
+//     }
+// }
+//
+// console.log(userAndAge('nur',15))
+
+// function lengthOfName(user){
+//     if (user.length > 3){
+//         return `${user} is accepted`
+//     }else {
+//         return `${user} is too short`
+//     }
+// }
+//
+// console.log(lengthOfName('Maksat'))
+
+// function lengthOfName(user){
+//     if (user.length < 5){
+//         return `${user} is accepted`
+//     }else {
+//         return `${user} is too long`
+//     }
+// }
+//
+// console.log(lengthOfName('Maks'))
+
+// function ageIsString (age){
+//     if (typeof age === 'number') {
+//         return ` ${age} is good job`
+//     }
+//     else {
+//         return `${age} is not good`
+//     }
+// }
+//
+// console.log(ageIsString(4))
+
+// function ageIsString (age) {
+//     if (age !== age.toString() ){
+//         return `${age} is must be string`
+//     }else {
+//         if (age > 23){
+//             return `${age} is right`
+//         }
+//         return `must be older then ${age}`
+//     }
+// }
+//
+// console.log(ageIsString('9'))
+
+
+console.log(ageIsString('77'))
+function weeksNumber(weeks){
+    if (weeks ===1) {
+        return 'today is monday'
+    }else if (weeks === 2){
+        return 'today is tuesday'
+    }else if (weeks === 3){
+        return 'today is wednesday'
+    }else if (weeks === 4){
+        return 'today is thursday'
+    }else if (weeks === 5){
+        return 'today is friday'
+    }else if (weeks === 6){
+        return 'today is weekend'
+    }else if (weeks === 7){
+        return 'today is weekend'
+    }
+    else {
+        return 'max day of weeks 7'
+    }
+}
+
+console.log(weeksNumber(3 ))
