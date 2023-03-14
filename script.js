@@ -229,36 +229,150 @@
 //     if (age !== age.toString() ){
 //         return `${age} is must be string`
 //     }else {
-//         if (age > 23){
+//         if (age >= 23){
 //             return `${age} is right`
 //         }
 //         return `must be older then ${age}`
 //     }
 // }
 //
-// console.log(ageIsString('9'))
+// console.log(ageIsString('23'))
 
 
-console.log(ageIsString('77'))
-function weeksNumber(weeks){
-    if (weeks ===1) {
-        return 'today is monday'
-    }else if (weeks === 2){
-        return 'today is tuesday'
-    }else if (weeks === 3){
-        return 'today is wednesday'
-    }else if (weeks === 4){
-        return 'today is thursday'
-    }else if (weeks === 5){
-        return 'today is friday'
-    }else if (weeks === 6){
-        return 'today is weekend'
-    }else if (weeks === 7){
-        return 'today is weekend'
-    }
-    else {
-        return 'max day of weeks 7'
-    }
-}
+// console.log(ageIsString('77'))
+// function weeksNumber(weeks){
+//     if (weeks ===1) {
+//         return 'today is monday'
+//     }else if (weeks === 2){
+//         return 'today is tuesday'
+//     }else if (weeks === 3){
+//         return 'today is wednesday'
+//     }else if (weeks === 4){
+//         return 'today is thursday'
+//     }else if (weeks === 5){
+//         return 'today is friday'
+//     }else if (weeks === 6){
+//         return 'today is weekend'
+//     }else if (weeks === 7){
+//         return 'today is weekend'
+//     }
+//     else {
+//         return 'max day of weeks 7'
+//     }
+// }
+//
+// console.log(weeksNumber(6 ))
 
-console.log(weeksNumber(3 ))
+// 03/10
+
+// function checkUser(user){
+//     if (user.length >= 3 && user.length <= 5){
+//         return `${user} is accepted`
+//     }else {
+//        return `${user} is too short or long`
+//     }
+// }
+//
+// console.log(checkUser('nurnnnn'))
+
+// function logIn(age,name,email){
+//     if(age  && name && email){
+//         return `Login is complete `
+//     }else {
+//         if(age >= 18 && age !== age.toString() ){
+//             return `${age} is accepted`
+//         }else {
+//             `${age} is rejected`
+//         }
+//         if(name.length <= 5){
+//             return `${name} is rejected`
+//         }else {
+//             return `${age} is rejected`
+//         }
+//          if(email ){
+//              return
+//          }
+//         return 'something is error'
+//     }
+// }
+//
+// console.log(logIn(19,'nurali'))
+
+// function logIn(age,name,email){
+//     const checkEmail = email[email.indexOf('@') + 1 ]
+//     if((age >18 && age !== age.toString())
+//         && (name.length >= 5)
+//         && (email === email.toString() && email.includes('@')
+//          && (checkEmail && checkEmail !== '.' )    )){
+//         return `${age} ${name} ${email} Login is complete `
+//     }else {
+//         return `${age} ${name} ${email} something is error`
+//     }
+// }
+//
+// console.log(logIn(33,'nurali' ,'nurali@k.com'))
+
+// function logIn(email){
+//     const checkEmail = email[email.indexOf('@') + 1 ]
+//     const checkEmail2 = email[email.substring(0,checkEmail)]
+//     console.log(checkEmail2)
+//     if ( email.includes('@') && (email.includes('.ru')
+//     || email.includes('.com',)) && checkEmail !== '.'
+//     && checkEmail2 !== email.includes('ru') && checkEmail2 !== 'com' && checkEmail2 !== '.'){
+//         return `${email} Login is complete `
+//     }else {
+//         return `${email} Login is rejected `
+//     }
+// }
+//
+// console.log(logIn('ejfsrudj.iskjdf@kk.ru'))
+//
+// console.log(logIn('nurali@k.com'))
+
+// function checkWord(word){
+//     const checkLength = word.length;
+//
+//     if(
+//         word.length % 2 === 0
+//         && word.length >= 4
+//         && word.length <= 8){
+//     return  `${checkLength} ${word} correct word`
+//     }
+//     else {
+//         return  `${checkLength} ${word} uncorrect word`
+//     }
+// }
+//
+// console.log(checkWord('helhj'))
+//
+// const numbersOfString = ['apple','orange','banana',]
+//
+// console.log(numbersOfString.split(' ').map(el,index))
+// id =3
+// fetch(`https://swapi.dev/api/people/${id}`)
+//     .then(res => res.json())
+//     .then((data) => {
+//         console.log(data.name)
+//         // alert(`name:${data.name}`)
+//     })
+
+// id =1
+// fetch(`https://swapi.dev/api/people/${id}`)
+//     .then(res => res.json())
+//     .then((data) => {
+//         // console.log(data.name)
+//         alert(`name:${data.mass}`)
+//     })
+// birth_year = 6
+// id =1
+// fetch(`https://swapi.dev/api/people/`){
+//     .then(res => res.json())
+//     .then((data) => {
+//         console.log(data)
+//         // alert(`vehicles:${data}`)
+//     }
+
+fetch(`https://swapi.dev/api/people`)
+.then(res => {console.log(res)
+    return res.json()})
+        .then(json => console.log(json))
