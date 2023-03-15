@@ -372,7 +372,119 @@
 //         // alert(`vehicles:${data}`)
 //     }
 
-fetch(`https://swapi.dev/api/people`)
-.then(res => {console.log(res)
-    return res.json()})
-        .then(json => console.log(json))
+// fetch(`https://swapi.dev/api/vehicles`)
+// .then(res => res.json())
+//         .then(json => console.log(json))
+
+// fetch(C)
+// .then(res => res.json())
+//         .then(data => console.log(data.name))
+
+// 03/14/23
+// async function res(id){
+//     const res = await  fetch(`https://swapi.dev/api/people/${id}`)
+//     const result = await res.json()
+//     console.log(result.name)
+//     const vehicles = result?.vehicles?.map(async (veh)=>{
+//        const vehName = await fetch(veh)
+//         const nameX =await vehName.json()
+//         return console.log(nameX.name)
+//     })
+//
+// }
+//
+// res(18)
+
+// const array =[5,4,7,6,3,5,67]
+// const reArray = array.reverse()
+// console.log(reArray)
+
+// function arr(array){
+//     const a = array.reverse()
+//     return a
+// }
+// console.log(arr([1,2,3]))
+
+// const array = [0,1,null,undefined,'hello',2,3,false]
+// const flArray = array.filter(el => el >0)
+// console.log(flArray)
+
+// function sortirovka(array){
+//     const result = array.filter(el => el > 0)
+//     const reResult = result.reverse()
+//        return reResult
+// }
+//
+// console.log(sortirovka([0,1,null,undefined,'hello',2,3,false]))
+
+// const array = [1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5]
+// const result = [...new Set(array)]
+// const newResult = result.sort()
+// console.log(newResult)
+
+// function filter(array){
+//     const result = [...new Set(array)]
+//     const newResult = result.sort()
+//     return newResult
+// }
+//
+// console.log(filter([1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5]))
+
+// let chars = [1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5];
+// let uniqueChars = chars.filter((a, index) => {
+//     return chars.indexOf(a) === index;
+// });
+// console.log(uniqueChars);
+
+
+//    function j(array){
+//         array = array.filter((el,index) =>{
+//            return  array.indexOf(el) ===index
+//        })
+//    }
+//
+// console.log(j(array[1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5]))
+
+// const array = [1,2,3]
+// const array2 = ['a','b','c']
+// console.log(...array, ...array2)
+// console.log(array.join(array2))
+
+// const array = [1,2,3]
+// const array2 = array.push(4,5,6)
+// console.log(array)
+
+// const array = [1,2,3]
+// const array2 = array.unshift(4,5,6)
+// console.log(array)
+
+// const array = [1,2,3,4,5]
+// const array2 = array.splice(1,2)
+// console.log(array)
+
+// const obj = {
+//     js:'test',
+//     jq: 'hello',
+//     css: 'world'
+// }
+// const values = Object.values(obj);
+// const keys = Object.keys(obj);
+//
+// console.log(keys)
+
+// const array = ['Капуста', 'Репа', 'Редиска', 'Морковка']
+// console.log(array.join(','))
+
+// const fnArray = (array) => array.join(',')
+// console.log(fnArray(['Капуста', 'Репа', 'Редиска', 'Морковка']))
+
+
+
+//     arr1 = [1, 2, 3, 4, 5];
+// arr2 = [4, 5, 6]
+// const rearrr = arr1.reduce((accumularot,value)=> accumularot + value,0)
+// const rearrr2 = arr2.reduce((accumularot,value)=> accumularot + value,0)
+// const result = rearrr + rearrr2
+// console.log(rearrr)
+// console.log(rearrr2)
+// console.log(result)
