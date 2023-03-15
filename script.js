@@ -430,20 +430,6 @@
 //
 // console.log(filter([1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5]))
 
-// let chars = [1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5];
-// let uniqueChars = chars.filter((a, index) => {
-//     return chars.indexOf(a) === index;
-// });
-// console.log(uniqueChars);
-
-
-//    function j(array){
-//         array = array.filter((el,index) =>{
-//            return  array.indexOf(el) ===index
-//        })
-//    }
-//
-// console.log(j(array[1,4,4,3,2,2,6,6,6,7,7,7,8,8,8,2,2,2,5,5,5]))
 
 // const array = [1,2,3]
 // const array2 = ['a','b','c']
