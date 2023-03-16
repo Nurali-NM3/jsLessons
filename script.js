@@ -474,3 +474,59 @@
 // console.log(rearrr)
 // console.log(rearrr2)
 // console.log(result)
+
+// const arr = ['misha','ivan','petr','niko','masha']
+// const a = arr.filter(el => el.startsWith('n') )
+// console.log(a)
+
+// function past(h, m, s){
+//     const g = h * 3600000;
+//     const f = m * 60000;
+//     const d = s * 1000;
+//
+//     return (g + f + d)
+// }
+//
+// console.log(past(1,1,1))
+// t = 0
+// console.log(t * 60000)
+
+// function past(h, m, s){
+//     return ((h*3600)+(m*60)+s)*1000;
+// }
+//
+// console.log(past(0,1,1))
+
+// 03/16/23
+
+// const arr = [1, 2, 3, 0, 4, 5, 6]
+// console.log(arr.map(el => el ** 2))
+
+//  const arr = [1, 2, 3, 0, 4, 5, 6]
+// console.log(arr.filter(el => el > 0))
+// console.log(arr.map(el => el > 0))
+
+//  const arr = [1, 2, -3, 0, 4, -5, 6, -6]
+// console.log(arr.filter(el => el < 0))
+// console.log(arr.map(el => el < 0))
+
+//  const arr = [1, 2, 3, 0, 4, 5, 6]
+// console.log(arr.filter(el => el % 2 ===0))
+// console.log(arr.map(el => el % 2 ===0))
+
+//  const arr = ['hello','sit','ipsum','javascript','python','sun','even']
+// console.log(arr.filter(el => el.length >= 5))
+// console.log(arr.map(el => el.length >= 5))
+
+// const arr = [1, 2, -3, 0, -4, 5, -6]
+// const line = arr.filter(el => el < 0)
+// console.log(line.length)
+
+//  const arr = [1, 2, 3, 33, 4, 5, 6]
+// const sum = arr.reduce((accumulator,num) => {
+//   return accumulator + num
+// },0)
+// console.log(sum)
+
+
+
