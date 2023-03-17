@@ -436,6 +436,14 @@
 // console.log(...array, ...array2)
 // console.log(array.join(array2))
 
+// function can(con,con2){
+//     const g = con.concat(con2)
+//     return g
+// }
+//
+// console.log(can([1,2,3],[4,5,6]))
+
+
 // const array = [1,2,3]
 // const array2 = array.push(4,5,6)
 // console.log(array)
@@ -521,6 +529,7 @@
 // const arr = [1, 2, -3, 0, -4, 5, -6]
 // const line = arr.filter(el => el < 0)
 // console.log(line.length)
+// console.log(line)
 
 //  const arr = [1, 2, 3, 33, 4, 5, 6]
 // const sum = arr.reduce((accumulator,num) => {
@@ -528,5 +537,88 @@
 // },0)
 // console.log(sum)
 
+// function firstNonConsecutive (arr) {
+// const arr = [1, 2, 3, 4, 6, 7]
+//     const g = arr.filter((el,inx) => arr.indexOf(el) !== inx ? )
+//
+//      console.log(arr)
 
 
+// console.log(firstNonConsecutive([1,2,3,4]))
+
+// function squareSum(numbers){
+//
+//     const num = numbers.reduce((acc,n) =>{
+//
+//         return acc + n **2
+//     },0)
+//     return num
+// }
+//
+// console.log(squareSum([1,2]))
+
+// function checkForFactor (base, factor) {
+//     // code here
+//
+//     if(base  % factor === 0){
+//         return true
+//     }else {
+//         return false
+//     }
+//
+// }
+//
+//
+// console.log(checkForFactor(2451,5))
+
+// const fn = arg =>{
+//
+//     // for(let i = arg; i >= 1 ; i--)
+//     // let g = [i]
+// return [arg].filter(el => el < 5)
+// }
+// console.log(fn(5))
+
+// Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for найдите сумму элементов этого массива. Запишите ее в переменную result
+
+// const a =[1, 2, 3, 4, 5,5]
+// let tol = 0
+// for(let i = 0; i < a.length;i++ ){
+//     tol += a[i]
+//
+// }
+// console.log(tol)
+
+// Дан массив с элементами [1, 2, 5, 9, 4, 13, 4, 10]. С помощью цикла for и оператора if проверьте есть ли в массиве элемент со значением,
+    // равным 4. Если есть - выведите на экран 'Есть!' и выйдите из цикла. Если нет - ничего делать не надо.
+
+const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
+
+// function countPositivesSumNegatives(input) {
+//   if(input &&  input.length !== 0){
+//     const a = [input.filter(el => el > 0).length]
+//
+//     const b = input.filter(el => el < 0)
+//     const e = b.reduce((acc, el) => {
+//       return  acc += el
+//     },0)
+//     a.push(e)
+//     return a
+//
+//   }else if(input === null || input.length === 0){
+//     return input
+//   }
+
+// }
+//
+// console.log(countPositivesSumNegatives([]))
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+    let a = sonYearsOld - dadYearsOld
+    return  a * 2
+}
+
+
+console.log(twiceAsOld(36,7))
+console.log(55%30)
